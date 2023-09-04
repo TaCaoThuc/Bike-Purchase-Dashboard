@@ -17,57 +17,58 @@ The dataset contains following columns:
 - Purchased Bike: Bike purchase ("Yes" or "No").
   
 A preview of the dataset:
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/930de8ad-8d13-47b8-93bf-3fa3db1df383)
+<img src="image/Screenshot preview.png">
 ## Cleaning Data
 ### Remove duplicates
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/308650bb-d711-4c1f-99d6-0721d6f04afa)
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/af502991-f70b-4c58-a247-48aa07903cbe)
+<img src="image/Screenshot remove duplicates 1.png">
+<img src="image/Screenshot remove duplicates 2.png">
+
 ### Find and Replace 
 The values in the Marital Status column and Gender column are abbreviated, which can cause ambiguity in visualizations. Therefore, we need to use Find and Replace feature to replace the abbreviations with the full forms. 
 
 In the Marital Status column, change 'M' to 'Married' and 'S' to 'Single':
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/41361ab0-0172-4f0c-bbc4-b196812ed3e5) 
+<img src="image/Screenshot find and replace 1.png"> 
 
 Next, in the Gender column, change M to Male and F to Female:
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/c731edc3-db42-40bb-a503-2dd34f4f68ef) 
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/654a6c44-888d-4544-89f1-683f57030f6d)
+<img src="image/Screenshot find and replace 2.png"> 
+<img src="image/Screenshot find and replace 3.png">
 ### Change currency format
 Change the data type of the Income column to Currency and remove decimal:
 
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/cbb619bb-a55c-460c-955b-cb430232c079)
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/6b2685b7-8274-4bba-8d84-7a1db5e63614)
+<img src="">
+<img src="">
 ### Divide people into age groups
 There are numerous ages in the dataset, which can make it difficult to visualize. To solve this, we need to divide people into three age groups: Adolescent (under 31 years old), Middle Age (31-55 years old), and Old (more than 55 years old). To do this we will use the NESTED If function.
 
 Create a column next to Age named Age Brackets and insert the following formula in the first row:
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/0b9b27a0-2e82-4ead-bf3a-1b98e725f2e6)
+<img src="">
 
 Then apply for all cells of the column:
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/fbbfc611-61f5-476c-968a-df8e8c1aa6d2)
+<img src="">
 ## Creating Pivot tables and Pivot charts
 Create a new sheet, insert Pivot table using cleaned data.
 
 Create a pivot table to summarize bike purchase by gender and average income. Then create a bar chart to visualize it: 
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/8889baab-7b14-45c9-9a91-c6ad02d78876)
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/31231749-5391-4a97-8d99-b96fed0fec9e)
+<img src="">
+<img src="">
 
 Create another pivot table to summarize bike purchase by commute distance:
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/9949f87b-d08c-4ac9-ab75-1e85b3f120e1)
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/81705046-b1d1-449c-9eaa-dbe08339fc7a)
+<img src="">
+<img src="">
 
 Go back to the dataset, change 10+ Miles to “More than 10 miles” so that rows’ values are in ascending order. Next, create a line graph to visualize it:
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/29e92522-8fb8-423d-b911-e0572b4de08b)
+<img src="">
 ## Creating Dashboard
 Copy and paste 3 charts into a new sheet then insert Slicers to allow readers filter people by Marital Status, Region, Education and Number of cars owned:
 
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/774d0e42-2e3f-4411-b7fb-fb0567724b24)
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/52a737f3-b2ad-4bf1-b19b-be1d65942a54)
+<img src="">
+<img src="">
 
 Connect 4 slicers to all 3 Pivot charts:
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/10986e89-b917-4ca5-a196-a8eb723a1df0)
+<img src="">
 
 Design the dashboard:
-![image](https://github.com/TaCaoThuc/Bike-Purchase-Dashboard/assets/142728022/7ef2baec-1aeb-4680-ad82-0f0e5f774c17)
+<img src="">
 
 ## 
 Some general insights that can be seen from the dashboard:
