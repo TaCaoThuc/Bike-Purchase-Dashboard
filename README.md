@@ -35,40 +35,49 @@ Next, in the Gender column, change M to Male and F to Female:
 ### Change currency format
 Change the data type of the Income column to Currency and remove decimal:
 
-<img src="">
-<img src="">
+<img src="image/Screenshot change currency 1.png">
+<img src="image/Screenshot change currency 2.png">
+
 ### Divide people into age groups
 There are numerous ages in the dataset, which can make it difficult to visualize. To solve this, we need to divide people into three age groups: Adolescent (under 31 years old), Middle Age (31-55 years old), and Old (more than 55 years old). To do this we will use the NESTED If function.
 
 Create a column next to Age named Age Brackets and insert the following formula in the first row:
-<img src="">
+
+<img src="image/Screenshot group people 1.png">
 
 Then apply for all cells of the column:
-<img src="">
+
+<img src="image/Screenshot group people 2.png">
+
 ## Creating Pivot tables and Pivot charts
 Create a new sheet, insert Pivot table using cleaned data.
 
 Create a pivot table to summarize bike purchase by gender and average income. Then create a bar chart to visualize it: 
-<img src="">
-<img src="">
+
+<img src="image/Screenshot gender and income 1.png">
+<img src="image/Screenshot gender and income 2.png">
 
 Create another pivot table to summarize bike purchase by commute distance:
-<img src="">
-<img src="">
+
+<img src="image/Screenshot distance 1.png">
+<img src="image/Screenshot distance 2.png">
 
 Go back to the dataset, change 10+ Miles to “More than 10 miles” so that rows’ values are in ascending order. Next, create a line graph to visualize it:
-<img src="">
+<img src="image/Screenshot distance 3.png">
+
+Create another pivot table to summarize people’s decision to buy a bike by age group and make a line graph to illustrate it.
+<img src="image/Screenshot age.png">
 ## Creating Dashboard
 Copy and paste 3 charts into a new sheet then insert Slicers to allow readers filter people by Marital Status, Region, Education and Number of cars owned:
 
-<img src="">
-<img src="">
+<img src="image/Screenshot create dashboard 1.png">
+<img src="image/Screenshot create dashboard 2.png">
 
 Connect 4 slicers to all 3 Pivot charts:
-<img src="">
+<img src="image/Screenshot create dashboard 3.png">
 
 Design the dashboard:
-<img src="">
+<img src="image/Screenshot create dashboard 4.png">
 
 ## 
 Some general insights that can be seen from the dashboard:
